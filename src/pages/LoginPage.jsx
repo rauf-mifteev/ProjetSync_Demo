@@ -3,8 +3,8 @@ import { Sparkles, ArrowRight, Users2 } from "lucide-react";
 import { login, register } from "../lib/data";
 
 const DEMO_ACCOUNTS = [
-  { name: "Kevin Vazquez Boza", role: "Scrum Master", email: "kevin.vb@demo.projetsync.app" },
-  { name: "Rauf Mifteev", role: "Backend", email: "rauf.mifteev@demo.projetsync.app" },
+  { name: "Kevin Vazquez Boza", role: "Frontend", email: "kevin.vb@demo.projetsync.app" },
+  { name: "Rauf Mifteev", role: "Scrum Master", email: "rauf.mifteev@demo.projetsync.app" },
 ];
 
 export default function LoginPage({ onAuth }) {
