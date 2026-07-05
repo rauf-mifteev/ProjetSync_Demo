@@ -26,13 +26,13 @@ function seedDatabase() {
     _id: "t_projetsync",
     name: "Équipe ProjetSync",
     members: [
-      { userId: "u_kvb", role: "scrumMaster", joinedAt: daysFromNow(-30) },
+      { userId: "u_kvb", role: "memberr", joinedAt: daysFromNow(-30) },
       { userId: "u_kevin", role: "member", joinedAt: daysFromNow(-30) },
-      { userId: "u_rauf", role: "member", joinedAt: daysFromNow(-30) },
+      { userId: "u_rauf", role: "scrumMaster", joinedAt: daysFromNow(-30) },
       { userId: "u_daniel", role: "member", joinedAt: daysFromNow(-30) },
       { userId: "u_danensky", role: "member", joinedAt: daysFromNow(-30) },
     ],
-    createdBy: "u_kvb",
+    createdBy: "u_rauf",
     createdAt: daysFromNow(-30),
   };
 
