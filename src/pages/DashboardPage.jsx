@@ -51,7 +51,7 @@ export default function DashboardPage({ user }) {
   return (
     <div className="mx-auto max-w-6xl px-5 py-6 md:px-8 md:py-8">
       <div className="mb-7">
-        <h2 className="font-display text-2xl font-semibold text-ink">Bonjour, {firstName} 👋</h2>
+        <h2 className="font-display text-2xl font-semibold text-ink">Bonjour, {firstName} </h2>
         <p className="mt-1 text-sm text-slate-500">Voici l'aperçu de {team.name} aujourd'hui.</p>
       </div>
 
