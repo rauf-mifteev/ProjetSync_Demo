@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { Sparkles, ArrowRight, Users2 } from "lucide-react";
+import { ArrowRight, Users2 } from "lucide-react";
 import { login, register } from "../lib/data";
+import LogoMark from "../components/LogoMark";
+import LogoFull from "../components/LogoFull";
 
 const DEMO_ACCOUNTS = [
-  { name: "Kevin Vazquez Boza", role: "Frontend", email: "kevin.vb@demo.projetsync.app" },
-  { name: "Rauf Mifteev", role: "Scrum Master", email: "rauf.mifteev@demo.projetsync.app" },
+  { name: "Rauf Mifteev", role: "Scrum Master / Backend", email: "rauf.mifteev@demo.projetsync.app" },
+  { name: "Kevin Vazquez Boza", role: "Designer", email: "kevin.vb@demo.projetsync.app" },
 ];
 
 export default function LoginPage({ onAuth }) {
@@ -57,13 +59,13 @@ export default function LoginPage({ onAuth }) {
         <div className="absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-teal-400/20 blur-3xl" />
 
         <div className="relative flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-white/15">
-            <Sparkles size={18} />
+          <div className="rounded-xl2 bg-white px-4 py-3 shadow-pop">
+            <LogoFull width={150} showTagline={false} />
           </div>
-          <span className="font-display text-xl font-semibold">ProjetSync</span>
         </div>
 
         <div className="relative max-w-sm">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-white/60">Réseau d'équipe</p>
           <h1 className="font-display text-3xl font-semibold leading-tight">
             Un seul endroit pour organiser vos travaux d'équipe.
           </h1>
@@ -85,9 +87,7 @@ export default function LoginPage({ onAuth }) {
       <div className="flex flex-col items-center justify-center px-6 py-12">
         <div className="w-full max-w-sm">
           <div className="mb-8 flex items-center gap-2 md:hidden">
-            <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white">
-              <Sparkles size={16} />
-            </div>
+            <LogoMark size={30} />
             <span className="font-display text-lg font-semibold text-ink">ProjetSync</span>
           </div>
 
