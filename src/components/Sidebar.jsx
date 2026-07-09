@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { LayoutDashboard, ListChecks, CalendarDays, Users, ScrollText, Sparkles } from "lucide-react";
+import { LayoutDashboard, ListChecks, CalendarDays, Users, ScrollText } from "lucide-react";
+import LogoMark from "./LogoMark";
 
 const NAV = [
   { to: "/", label: "Tableau de bord", icon: LayoutDashboard, end: true },
@@ -13,9 +14,7 @@ export default function Sidebar() {
   return (
     <aside className="hidden md:flex w-64 shrink-0 flex-col border-r border-slate-200 bg-white px-4 py-5">
       <div className="flex items-center gap-2 px-2 mb-8">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-500 text-white">
-          <Sparkles size={17} strokeWidth={2.2} />
-        </div>
+        <LogoMark size={32} />
         <span className="font-display text-lg font-semibold tracking-tight text-ink">ProjetSync</span>
       </div>
 
