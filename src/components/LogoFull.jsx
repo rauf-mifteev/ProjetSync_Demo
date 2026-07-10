@@ -1,9 +1,23 @@
 // Logo complet (icône + mot-symbole + accroche), pour les emplacements de
-// grande taille comme le panneau héros de la page de connexion.
+// grande taille comme un en-tête de document. Pour un badge compact
+// icône-seule correctement centré (ex. page de connexion), utiliser
+// LogoMark plutôt que LogoFull avec showTagline={false} : le mot-symbole
+// a besoin d'assez de hauteur de viewBox pour ne pas être rogné.
 export default function LogoFull({ width = 220, showTagline = true }) {
-  const height = showTagline ? width : width * (170 / 300);
+  // Bornes verticales réelles du contenu SVG (icône: y 49–166, mot-symbole:
+  // y ~191–223, accroche: y ~237–255), avec une marge de respiration.
+  const viewBoxY = 30;
+  const viewBoxHeight = showTagline ? 240 : 205;
+  const height = width * (viewBoxHeight / 300);
+
   return (
-    <svg viewBox={`0 0 300 ${showTagline ? 270 : 170}`} width={width} height={height} role="img" aria-label="ProjetSync — Réseau d'équipe">
+    <svg
+      viewBox={`0 ${viewBoxY} 300 ${viewBoxHeight}`}
+      width={width}
+      height={height}
+      role="img"
+      aria-label="ProjetSync — Réseau d'équipe"
+    >
       <line x1="150" y1="100" x2="105" y2="65" stroke="#C1D5EB" strokeWidth="6" strokeLinecap="round" />
       <line x1="150" y1="100" x2="195" y2="65" stroke="#C1D5EB" strokeWidth="6" strokeLinecap="round" />
       <line x1="150" y1="100" x2="150" y2="150" stroke="#C1D5EB" strokeWidth="6" strokeLinecap="round" />
