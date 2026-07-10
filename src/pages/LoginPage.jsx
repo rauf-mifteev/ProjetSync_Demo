@@ -2,7 +2,6 @@ import { useState } from "react";
 import { ArrowRight, Users2 } from "lucide-react";
 import { login, register } from "../lib/data";
 import LogoMark from "../components/LogoMark";
-import LogoFull from "../components/LogoFull";
 
 const DEMO_ACCOUNTS = [
   { name: "Rauf Mifteev", role: "Scrum Master / Backend", email: "rauf.mifteev@demo.projetsync.app" },
@@ -58,10 +57,11 @@ export default function LoginPage({ onAuth }) {
         <div className="absolute -right-24 -top-24 h-72 w-72 rounded-full bg-brand-500/40 blur-3xl" />
         <div className="absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-teal-400/20 blur-3xl" />
 
-        <div className="relative flex items-center gap-2">
-          <div className="rounded-xl2 bg-white px-4 py-3 shadow-pop">
-            <LogoFull width={150} showTagline={false} />
+        <div className="relative flex items-center gap-4">
+          <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-white shadow-pop">
+            <LogoMark size={64} />
           </div>
+          <span className="font-display text-3xl font-semibold text-white">ProjetSync</span>
         </div>
 
         <div className="relative max-w-sm">
