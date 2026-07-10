@@ -58,8 +58,8 @@ export default function LoginPage({ onAuth }) {
         <div className="absolute -bottom-32 -left-16 h-80 w-80 rounded-full bg-teal-400/20 blur-3xl" />
 
         <div className="relative flex items-center gap-4">
-          <div className="flex h-24 w-24 shrink-0 items-center justify-center rounded-full bg-white shadow-pop">
-            <LogoMark size={64} />
+          <div className="flex h-36 w-36 shrink-0 items-center justify-center rounded-full bg-white shadow-pop">
+            <LogoMark size={96} />
           </div>
           <span className="font-display text-3xl font-semibold text-white">ProjetSync</span>
         </div>
